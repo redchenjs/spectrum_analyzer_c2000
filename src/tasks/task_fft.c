@@ -12,7 +12,7 @@
 //*****************************************************************************
 // defines
 //*****************************************************************************
-#define NSTAGES     8
+#define NSTAGES     10
 #define NSAMPLES    1<<NSTAGES
 //*****************************************************************************
 // globals
@@ -37,8 +37,8 @@ void task_fft_init(void)
     // Initialize CFFT object
     CFFT.pInBuffer  = adcAResultsSig;
     CFFT.pOutBuffer = adcAResultsFFT;
-    CFFT.init = (void (*)(void *))CFFT_init512Pt;
-    CFFT.run  = (void (*)(void *))CFFT_run512Pt;
+    CFFT.init = (void (*)(void *))CFFT_init1024Pt;
+    CFFT.run  = (void (*)(void *))CFFT_run1024Pt;
 
     // Initialize the handle
     handleCFFT = &CFFT;

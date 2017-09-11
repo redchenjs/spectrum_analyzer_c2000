@@ -81,8 +81,8 @@ SECTIONS
 
    twiddleFactors   : > FLASHB,    PAGE  = 0
    /* Test specific sections */
-   buffer1          : > RAMLS2,    ALIGN = 1024, PAGE = 0
-   buffer2          : > RAMLS3,    PAGE = 0
+   buffer1          : > RAMLS2,    ALIGN = 2048, PAGE = 0
+   buffer2          : > RAMLS3,    ALIGN = 2048, PAGE = 0
 
    .reset              : > RESET,     PAGE = 0, TYPE = DSECT /* not used, */
 

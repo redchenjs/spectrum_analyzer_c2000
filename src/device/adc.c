@@ -9,7 +9,7 @@
 //
 // Defines
 //
-#define RESULTS_BUFFER_SIZE  1024
+#define RESULTS_BUFFER_SIZE  2048
 #define EX_ADC_RESOLUTION    ADC_RESOLUTION_16BIT   // Or ADC_RESOLUTION_16BIT
 #define EX_ADC_SIGNAL_MODE   ADC_MODE_DIFFERENTIAL   // Or ADC_MODE_DIFFERENTIAL
 
@@ -138,7 +138,7 @@ void initEPWM(void)
     //
     EPWM_setClockPrescaler(EPWM1_BASE, EPWM_CLOCK_DIVIDER_2, EPWM_HSCLOCK_DIVIDER_1);
     EPWM_setCounterCompareValue(EPWM1_BASE, EPWM_COUNTER_COMPARE_A, 0x0000);
-    EPWM_setTimeBasePeriod(EPWM1_BASE, 0xBEB9);
+    EPWM_setTimeBasePeriod(EPWM1_BASE, 0xBEBC);
 
     //
     // Freeze the counter
